@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 800px;
+  margin: 50px auto 0;
+  position: relative;
+}
+#myvideo {
+  width: 100%;
+}
+
+.controls {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.controls i {
+  cursor: pointer;
+  color: dodgerblue;
+}
+.play-control,
+.volume-mute {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.video-timeline {
+  height: 7px;
+  width: 100%;
+  cursor: pointer;
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  transform: translateY(-60%);
+}
+.video-timeline .progress-area {
+  height: 3px;
+  position: relative;
+  background: white;
+}
+/* .progress-area span {
+  position: absolute;
+  left: 50%;
+  top: -25px;
+  font-size: 13px;
+  color: #fff;
+  pointer-events: none;
+  transform: translateX(-50%);
+} */
+.progress-area .progress-bar {
+  width: 0%;
+  height: 100%;
+  position: relative;
+  background: #2289ff;
+}
+.progress-bar::before {
+  content: "";
+  right: 0;
+  top: 50%;
+  height: 13px;
+  width: 13px;
+  position: absolute;
+  border-radius: 50%;
+  background: #2289ff;
+  transform: translateY(-50%);
+}
+.progress-bar::before,
+.progress-area span {
+  display: none;
+}
+
+.video-timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

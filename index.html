@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/9cb4d82a7a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Video Player</title>
+  </head>
+  <body>
+    <div class="container">
+      <video src="./assets/My Video.mp4" id="myvideo"></video>
+      <div class="video-timeline">
+        <div class="progress-area">
+          <div class="progress-bar"></div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <div class="volume-mute">
+          <i class="fa-solid fa-volume-high mute_unmute"></i>
+          <input type="range" min="0" max="1" step="any" class="input-range" />
+        </div>
+        <div class="play-control">
+          <i class="fa-solid fa-backward" id="backward"></i>
+          <i class="fa-solid fa-play" id="play"></i>
+          <i class="fa-solid fa-forward" id="forward"></i>
+        </div>
+        <div class="video-timer">
+          <p class="current-time">00:00</p>
+          <p class="separator">/</p>
+          <p class="video-duration">00:00</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
